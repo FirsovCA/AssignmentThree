@@ -1,0 +1,16 @@
+
+section.benefits > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+
+section.benefits li {
+    line-height: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section.benefits span {
+    font-weight: 500;;
+}

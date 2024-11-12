@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bitter Chocolate: The page of the site with contact details and a feedback form.">
+    <meta name="author" content="Sergei Firsov">
+    <title>Bitter Chocolate: Contacts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo-wrapper">
+            <img src="images/logo.jpeg" alt="Logo with image of chocolate" width="60" height="60">
+            <h1>Bitter chocolate</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="health.html">Health Benefits</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <section class="contact-info">
+                <h2 class="subtitle">We would Love to Hear from You</h2>
+                <p><span>Email:</span><a href="mailto:info@bitterchocolate.com"> info@bitterchocolate.com</a></p>
+                <p><span>Phone:</span> +1 (777) 444-5555</p>
+                <p><span>Address:</span> 777 Chocolate Ave, Toronto</p>
+            </section>
+    
+            <section class="contact-form">
+                <h2 class="subtitle">Leave an Opinion about Our Website.</h2>
+                <form action="#" method="post" class="feedback">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Bitter Chocolate. All rights reserved.</p>
+        <p>This website is for educational and non-commercial use only.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.forms[0];
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                alert("Thank you, the form was successfully submitted!");
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html>

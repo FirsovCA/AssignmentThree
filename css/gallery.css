@@ -1,0 +1,35 @@
+section.gallery {
+    height: 100%;
+}
+
+.gallery-wrapper {
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
+.gallery-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.arrow-button {
+    position: absolute;
+    bottom: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+}
+
+.arrow-button:hover {
+    cursor: pointer;
+}
+
+.arrow-button.left {
+    left: 0;
+}
+
+.arrow-button.right {
+    right: 0;
+}

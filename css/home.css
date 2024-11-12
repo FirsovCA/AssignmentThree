@@ -1,0 +1,14 @@
+section.home p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 0.5rem;
+    background-color: #edd9cf;
+    border-radius: 10px;
+    color: #3b2a2a;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+section.home span {
+    font-weight: 600;
+}
